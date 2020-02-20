@@ -1,0 +1,447 @@
+* {
+    margin: 0; padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background-color: rgb(19,23,42);
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    background: rgba(19,23,42, 0.7);
+    font-size: 28px;
+    z-index: 3;
+
+    padding: 20px;
+
+}
+
+.image {
+    position:relative;
+    z-index: -1;
+    top:0;
+    left:0;
+    min-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.contacts_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.phone_container{
+    z-index: 2; 
+    text-align: center;
+
+}
+
+.header_phone {
+    color: red;
+}
+
+.phone_text {
+    color: white;
+    font-size: 30px;
+
+    background-image: url(phone.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; 
+    width:auto;
+    height: auto;
+}
+
+.geo_container{ 
+    text-align: center;
+}
+
+.header_geo {
+    color: red;
+}
+
+.geo_text {
+    color: white;
+    font-size: 30px;
+    background-image: url(coordinates.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    margin-right: auto;
+    margin-left: auto; 
+    width:auto;
+    height: auto;
+
+}
+
+.schedule_container{
+    text-align: center;
+
+}
+
+.header_schedule {
+    color: red;
+}
+
+.schedule_text {
+    color: white;
+    font-size: 30px;
+
+    background-image: url(times.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; 
+    width:auto;
+    height: auto;
+
+}
+
+.open_team_cantainer {
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 45px;
+    background-color: rgb(13,15,27);
+}
+.open_team_label {
+    font-size: 42px;
+    color: white;
+    text-align: center;
+
+}
+
+.open_team_image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-top: 45px;
+
+}
+
+.open_team_image_style {
+    height: 600px;
+    padding-bottom: 20px;
+}
+
+.open_team_timetable {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+.open_team_table {
+    background-color: rgb(13,15,27);
+}
+
+th, td:first-child {
+    color: white;
+    padding: 10px 20px;
+}
+
+tr,th,td {
+    padding: 10px;
+    font-size: 22px;
+    width: 120px;
+}
+td {
+    font-size: 22px;
+}
+
+.Red {
+    color: rgb(238,45,36);
+}
+.other_open_team {
+    background-color: rgb(13,15,27);
+    padding-top: 20px;
+}
+
+.other_open_team_text {
+    display: table;  
+    font-size: 22px;
+    color: white;   
+    margin: auto;
+}
+
+.parallax {
+      /* The image used */
+  background-image: url("parallax_background.jpg");
+
+  /* Set a specific height */
+  height: 180px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.stock_container {
+    background-color: rgba(255,20,50,0.6);
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.tournaments {
+    display: table;
+    margin: auto;
+    width: 100%;
+}
+
+.tournaments_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.tournament_photo {
+    min-height: 800px;
+    min-width: 550px;
+    max-height: 1000px;
+    max-width: 550px;
+}
+
+.tournaments_item {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+   
+}
+
+.tournaments_label {
+    font-size: 42px;
+    color: white;
+    text-align: center;
+    padding-top: 40px;   
+}
+
+.tournaments_sublabel {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.tournaments_item_label {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px; 
+    border-bottom: 1px solid rgb(230,45,36);
+}
+
+.rectangle {
+    list-style: none; 
+    padding: 0;
+}
+.rectangle li {
+    position: relative;
+    display: block;
+    padding: 15px;  
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    font-size: 18px;
+}
+
+.vl {
+    border-left: 1px solid red;
+    height: 300px;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+
+hr {
+    width: 60px;
+    margin: auto;
+    margin-top: 5px;
+    border: 1px solid rgb(230,45,36);
+}
+
+.contacts_cantainer {
+    display: table;
+    color: white;
+    background-color: rgb(13,15,27);
+    margin: auto;
+    width: 100%;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.contacts_info {
+    padding-bottom: 40px;
+    display: table;
+}
+
+.contacts_label {
+    padding-top: 40px;
+    display: table; 
+    font-size: 42px;
+    color: white;
+    margin: auto;
+    
+}
+
+.contacts_text_label {
+    display: table;
+    font-size: 22px;
+}
+.contacts_text {
+        display: table;
+        font-size: 18px;
+        padding: 5px;
+        color: white;
+}
+
+.contacts_body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    padding-top: 30px; 
+}
+.contacts_address {
+   margin-top: 20px;
+   border-left: 1px solid red;
+   padding-left: 10px;
+     padding-left: 10px;
+}
+
+.contacts_parking {
+     margin-top: 20px;
+    border-right: 1px solid red;
+    padding-right: 10px;
+      padding-left: 10px;
+}
+
+.contacts_mobi {
+    margin-top: 20px;
+    border-left: 1px solid red;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.price_container {}
+
+.price_label {
+    padding-top: 40px;
+    display: table; 
+    font-size: 42px;
+    color: white;
+    margin: auto;
+}
+
+.price_body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.price_action {
+    display: table;
+    width: 270px;
+    padding-bottom: 40px;
+}
+
+.price_action_label {
+    color: white;
+    font-size: 24px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(230,45,36);
+}
+
+.price_action_list {
+    list-style-type: none; 
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+.price_action_list li {
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+.price_action_price {
+    padding-top: 23px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.network {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.network_text {
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.insta_img {
+    width: 50px;
+}
+
+.vk_img {
+    width: 50px;
+}
